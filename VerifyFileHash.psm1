@@ -33,7 +33,7 @@ Function Verify-FileHash {
         }
         else {
           Write-Host "`nSomething's off. Review the output below to see the difference in the hashes provided." -ForegroundColor Yellow
-	        Compare-Object -ReferenceObject $FileHash -DifferenceObject $PublishedHash
+	  Compare-Object -ReferenceObject $FileHash -DifferenceObject $PublishedHash
         }
       }
       catch {
